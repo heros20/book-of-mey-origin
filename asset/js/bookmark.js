@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     const bookmark_id = localStorage.getItem('bookmark_id') || -1;
-    $('.page').before((index) => '<div data-index="' + index + '" class="bookmarkss" style="text-align:center;color:white;font-weight:bold" ></div>');
+    $('.first-P').append((index) => '<div data-index="' + index + '" class="bookmarkss" style="text-align:center;color:white;font-weight:bold" ></div>');
 
     if (bookmark_id >= 0) {
       $('*[data-index="' + bookmark_id + '"]').addClass('actived');
